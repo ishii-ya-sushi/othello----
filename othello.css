@@ -1,0 +1,157 @@
+/* 基本レイアウト　ここから↓ */
+body {
+    background-color: aquamarine;
+}
+
+header,
+#blueSide,
+#contents,
+#redSide,
+footer {
+    width: 1280px;
+    margin: 0 auto 5px auto;
+    background-color: antiquewhite;
+    /* border: 1px dotted black; */
+}
+
+header,
+footer {
+    height: 100px;
+    font-size: 187.75%;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 3.5;
+}
+
+header,
+footer {
+    background-color: aqua;
+}
+
+
+footer {
+    background-color: orangered;
+}
+
+#blueSide,
+#redSide {
+    display: flex;
+    justify-content: space-between;
+}
+
+#blueSide div,
+#redSide div {
+    width: 250px;
+    height: 75px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#contents {
+    height: 1050px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub1,
+#sub2 {
+    width: 100px;
+    background-color: powderblue;
+    border: 5px solid black;
+}
+
+#main {
+    width: 1080px;
+    border: 25px solid black;
+    border-radius: 50%;
+    font-size: 680px;
+    text-align: center;
+
+    position: relative;
+}
+
+#board {
+    position: absolute;
+    top: -5px;
+    /* right: 0px; */
+
+}
+
+#board {
+    border: 10px solid red;
+    border-radius: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    width: 85px;
+    height: 85px;
+    /* margin: 2px 2px; */
+    background-color: darkgreen;
+    color: darkgreen;
+    font-size: 85px;
+    /* font-size: 80px; */
+    line-height: 1.0;
+    text-align: center;
+    border: 7px double white;
+    cursor: pointer;
+}
+
+.square:hover {
+    border-color: rgb(214, 173, 187);
+    /* background-color: rgb(214, 173, 187);
+    color: rgb(214, 173, 187); */
+}
+
+.inner {
+    pointer-events: none;
+    /* font-size:0; */
+}
+
+.outer {
+    /* background-color: rgb(80, 149, 80); */
+    background-color: gray;
+    /* color: rgb(182, 217, 182); */
+    color: gray;
+    pointer-events: none;
+    /* font-size:0; */
+}
+
+.able {
+    color: rgb(141, 110, 216);
+    background-color: rgb(141, 110, 216);
+    pointer-events: auto;
+    cursor: pointer;
+    /* font-size:0; */
+}
+
+/* .darkgreen {
+    color: darkgreen;
+    pointer-events: none;
+} */
+
+.black {
+    color: black;
+    pointer-events: none;
+}
+
+.white {
+    color: white;
+    pointer-events: none;
+}
+
+/* .noClick {
+    pointer-events: none;
+} */
+
+.guide {
+    /* border: 7px double rgb(141, 110, 216); */
+    /* background-color: rgb(141, 110, 216); */
+    opacity: 0.50;    
+}
+
+/* 色々と　ここまで↑ */
